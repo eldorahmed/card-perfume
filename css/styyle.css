@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fraunces-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*::before,
+::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  background-color: #f2eae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.card {
+  display: flex;
+  width: 600px;
+  height: 450px;
+  justify-content: center;
+}
+.card__img {
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+.card__content {
+  background-color: white;
+  padding: 32px;
+  border-radius: 0px 10px 10px 0px;
+}
+.card__heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #6c7289;
+  margin-bottom: 20px;
+}
+.card__title {
+  font-family: "Fraunces", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #1c232b;
+  margin-bottom: 24px;
+}
+.card__desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #6c7289;
+  margin-bottom: 29px;
+}
+.card__price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 30px;
+}
+.card__price_now {
+  font-family: "Fraunces", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #3d8168;
+}
+.card__price_before {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #6c7289;
+  text-decoration: line-through;
+}
+.card__button {
+  width: 236px;
+  height: 48px;
+  background: #3d8168;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  border-radius: 8px;
+  border-color: transparent;
+  &:hover {
+    background-color: #284f41;
+  }
+}
+.card__button-img {
+}
+.card__button-text {
+  font-family: " Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
